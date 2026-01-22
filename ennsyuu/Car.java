@@ -1,4 +1,4 @@
-package Tesuto;
+package ennsyuu;
 
 public class Car {
     int speed;
@@ -10,5 +10,6 @@ public class Car {
             System.out.println("スピードの出しすぎです");
         }
     }
+    
 
 }
