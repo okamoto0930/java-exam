@@ -3,7 +3,7 @@ package exam1;
 public class Car {
     String name;
 
-    void put OnGas(){
+    void putOnGas(){
         System.out.println(name+"に給油します");
     }
     void run(){
