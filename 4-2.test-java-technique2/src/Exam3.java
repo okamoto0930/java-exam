@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Exam3 {
+    public static void main(String[] args) {
+        
+        ArrayList<Employee> list =new ArrayList<>();
+
+        list.add new Employee ("後藤", 31);
+        list.add new Employee("山田",28);
+        list.add new Employee("佐藤" ,25);
+        list.add new Employee("田中" ,19);
+    
+        for(String name:list){
+            System.out.println(name);
+        }
+    }
+}

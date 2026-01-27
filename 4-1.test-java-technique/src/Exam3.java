@@ -4,7 +4,7 @@ public class Exam3 {
         try{
         Class.forName("java.lang.NotFoundClass");
         }catch (ClassNotFoundException e){
-            System.out.println("例外が発生しました");
+            System.out.println("例外が発生しました！");
         }
     }
 }

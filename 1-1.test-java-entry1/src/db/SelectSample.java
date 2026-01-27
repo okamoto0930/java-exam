@@ -30,6 +30,9 @@ public class SelectSample {
         String sql =null;
 
 
+
+        
+
         try{
             //(1)データベースに接続
             con =DriverManager.getConnection(url,user,password);
