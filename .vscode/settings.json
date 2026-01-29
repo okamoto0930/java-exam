@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+        ".",
+        "1-1.test-java-entry1/src",
+        "1-2.test-java-entry2",
+        "1-3.test-java-entry3/src",
+        "2.test-object-oriented",
+        "3.test-object-oriented2/src",
+        "4-1.test-java-technique/src",
+        "4-2.test-java-technique2/src",
+        "7-1.test-dbaccess/src",
+        "ennsyuu/dbennsyuu/src",
+        "ennsyuu2/src"
+    ],
+    "java.project.referencedLibraries": [
+        "ennsyuu/dbennsyuu/lib/postgresql-42.7.9.jar"
+    ]
+}
