@@ -92,7 +92,7 @@ public class MemberDao {
 	 */
 	public void insert(Member member){
 		Connection con = DBManager.createConnection();
-		String sql = "INSERT members_table INTO ( name, age, dep_id)VALUES ( ?, ?, ?)";
+		String sql = "INSERT members_table INTO ( name, age, de)VALUES ( ?, ?, ?)";
 		try {
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			// ここに挿入処理を書く
