@@ -1,4 +1,7 @@
 package ennsyuu;
+
+import Exam1.Car;
+
 //ポリモーフィズム
 public class Polymorphizm {
    public static void main(String[] args) {

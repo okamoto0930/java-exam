@@ -1,15 +1,16 @@
-package ennsyuu;
-
+package Exam1;
 public class Car {
+    
     int speed;
 
     void run(){
-        speed=speed+50;
-        System.out.println("走りました。スピードが○○km/hになりました。");
+       speed += 50; 
+       System.out.println("走りました。スピードが"+speed+"km/hになりました。");
         if(speed>=120){
             System.out.println("スピードの出しすぎです");
         }
-    }
-    
 
+    }
+
+    
 }

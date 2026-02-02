@@ -1,4 +1,4 @@
-package Sample.7-1.test-dbaccess.src.exam;
+package exam;
 
 
 import java.sql.Connection;
@@ -49,6 +49,7 @@ public class Exam1 {
             pstmt.setInt(3,55);
             pstmt.setInt(4,2);
 
+			pstmt.executeUpdate();
 
 			
 			// (5)結果の操作
