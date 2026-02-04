@@ -4,7 +4,11 @@ public class Exam1 {
         for(int i=1 ;i<10 ;i++){
             int answer =0+i;
 
-        for(int j=1 ;j<10 ;j++){    
+        for(int j=1 ;j<10 ;j++){  
+            
+            if(answer<=9){
+                System.out.println("0"+answer+"　");
+            }
             System.out.print(answer*j+"　");
         }
         }
