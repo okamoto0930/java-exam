@@ -13,8 +13,8 @@ public class ReceiveNameController {
     }
 
     @RequestMapping("/nameform")
-    public String Finishe(){
-        
+    public String Finishe(String name){
+        System.out.println("入力された名前は" +name);
         return "finished";
     }
 }

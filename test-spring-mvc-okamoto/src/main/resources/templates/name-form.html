@@ -6,10 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-     <form action="@{/login/nameform}"></form>
+     <form th:action="@{/login/nameform}" method="post">
+
         名前の入力をしてください<br>
         <input type="text" name="name">
         <button>送信</button>
-
+        </form>
 </body>
 </html>
