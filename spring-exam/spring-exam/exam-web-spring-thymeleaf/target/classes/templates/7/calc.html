@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>問7</title>
+</head>
+<body>
+	<!-- Spring formタグを使って入力値を残す -->
+	<form th:object="${calcForm}" th:action="@{/add}" method="post">
+
+
+		<!-- エラーメッセージ表示 -->
+		<input type="text" name="left" th:field="*{left}">
+		<span>&nbsp;+&nbsp;</span>
+		<input type="text" name="right" th:field="*{right}">
+		<span>&nbsp;=&nbsp;</span>
+		<span th:text="${result}"></span><br>
+		<p th:if="${right==null}">右のテキストボックスには数値を入力してください。</p>
+		<p th:if="${left==null}">左のテキストボックスには数値を入力してください。</p>
+
+		<div><input type="submit" value="計算" /></div>
+
+	</form>
+</body>
+</html>

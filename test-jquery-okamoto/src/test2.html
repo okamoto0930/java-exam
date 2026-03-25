@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    
+    <p id="name">岡本咲恵</p>
+    <button id="btn">名前の色を赤色にする</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <div style="color: red;"></div>
+    <script>
+        $("#btn").click(function(){
+            $("#name").change("color");
+        })
+    </script>
+
+</body>
+</html>
