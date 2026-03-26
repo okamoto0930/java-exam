@@ -121,4 +121,9 @@ public class UserService {
         }
         users.remove(id);
     }
+
+    public Object findById() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+    }
 }

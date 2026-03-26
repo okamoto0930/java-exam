@@ -2,11 +2,13 @@ package com.example.restapi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.restapi.service.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * ユーザー情報を管理するREST APIコントローラー
@@ -26,8 +28,16 @@ public class UserApiController {
 
     // パスパラメータを使ったGETメソッド（GET /users/{id}）
     // 引数や戻り値は適宜修正してください
+    @GetMapping("/users")
     public void getUserById() {
-        return;
+
+        return userService.findById();
+
+    int status =response.statusCode();
+        if(status==200){
+            Object Mapper =new ObjectMapper();
+
+        }
     }
 
     // クエリパラメータを使ったGETメソッド（GET /users/search）
