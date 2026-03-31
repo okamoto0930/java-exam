@@ -1,4 +1,4 @@
 let firstName =("sakie");
 let lastName =("okamoto");
 
-alert(firstName+lastName);
+console.log(firstName+" "+lastName);

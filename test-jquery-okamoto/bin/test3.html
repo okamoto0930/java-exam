@@ -5,6 +5,7 @@
     <title></title>
 </head>
 <body>
+
     年齢：<input type="number" name="age" id="age">
     <button id="btn">入力された年齢をアラート表示する</button>
 
@@ -12,9 +13,10 @@
     
     <script>
     $("#btn").click(function(){
-        $("#age").val(alert("age"));
+        let age =$("#age").val();
+        alert(age);
     })
-
     </script>
+
 </body>
 </html>

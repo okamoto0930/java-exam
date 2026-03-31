@@ -1,4 +1,4 @@
-let testScore =80;
+let testScore =48;
 
 if(0<=testScore && testScore<80){
     console.log("追試です");

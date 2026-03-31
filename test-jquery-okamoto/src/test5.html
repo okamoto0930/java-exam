@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <select name="select" id="select">
+        <option value="1">初期表示</option>
+        <option value="2">Java</option>
+        <option value="3">JavaScript</option>
+    </select>
+    <p id ="result"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $("#select").change(function(){
+            let value =$(this).val();
+        
+            if(value =="1"){
+                $("#result").text("初期表示");
+            }else if(value =="2"){
+                $("#result").text("System.out.println('Hello World');");
+            }else if(value =="3"){
+                $("#result").text("console.log('Hello World');");
+            }
+        })
+    </script>
+
+</body>
+</html>

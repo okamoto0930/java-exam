@@ -7,9 +7,10 @@
 <body>
     <button id="btn">ダブルクリックできないボタン</button>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script>
         $("#btn").click(function(){
-            $("#btn").hide;
+            $(this).prop("disabled",true);
         })
     </script>
 </body>
